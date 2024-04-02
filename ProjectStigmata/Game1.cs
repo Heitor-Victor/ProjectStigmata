@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 
 namespace ProjectStigmata
 {
@@ -15,6 +17,10 @@ namespace ProjectStigmata
         private Vector2 _PkeyPosition;
         private float _logoScale = 0.0f;
         private float _fadeSpeed = 0.01f;
+        Menu _menu;
+        private bool _fstScreen = false;
+        private bool _menuScreen = false;
+        private KeyboardState _previousKeyboardState;
 
         public Game1()
         {
@@ -31,7 +37,7 @@ namespace ProjectStigmata
                 (_graphics.PreferredBackBufferHeight - _NGlogo.Height) / 2.0f);
             _PkeyPosition = new Vector2((_graphics.PreferredBackBufferWidth - _Pkey.Width) / 2.0f,
                 _STGlogo.Height);
-        }
+    }
 
         protected override void LoadContent()
         {
@@ -40,6 +46,15 @@ namespace ProjectStigmata
             _NGlogo = Content.Load<Texture2D>("NGlogo");
             _STGlogo = Content.Load<Texture2D>("STGlogo");
             _Pkey = Content.Load<Texture2D>("Pkey");
+
+            SpriteFont _font = Content.Load<SpriteFont>("t4cbeaulieux");
+            List<string> _options = new List<string>()
+            {
+                "Novo jogo",
+                "Opcoes",
+                "Creditos"
+            };
+            _menu = new Menu(_font, _options);
 
             // TODO: use this.Content to load your game content here
         }
@@ -56,6 +71,23 @@ namespace ProjectStigmata
             {
                 _fadeSpeed *= -1.0f;
             }
+            if (_logoScale <= 0.0f && _fadeSpeed < 0.0f)
+            {
+                _fstScreen = true;
+                _fadeSpeed = 0.0f;
+                _logoScale = -1.0f;
+            }
+            if (_fstScreen && Keyboard.GetState().IsKeyDown(Keys.Enter) && !_previousKeyboardState.IsKeyDown(Keys.Enter))
+            {
+                _fstScreen = false;
+                _menuScreen = true;
+            }
+            _previousKeyboardState = Keyboard.GetState();
+
+            if (_menuScreen)
+            {
+                _menu.Update(gameTime);
+            }
 
             base.Update(gameTime);
         }
@@ -69,10 +101,14 @@ namespace ProjectStigmata
             {
                 _spriteBatch.Draw(_NGlogo, _logoPosition, Color.White * _logoScale);
             }
-            if (_logoScale == 0.0f)
+            if (_fstScreen)
             {
                 _spriteBatch.Draw(_STGlogo,Vector2.Zero, Color.White);
                 _spriteBatch.Draw(_Pkey,_PkeyPosition, Color.White);
+            }
+            if (_menuScreen)
+            {
+                _menu.Draw(_spriteBatch);
             }
 
 

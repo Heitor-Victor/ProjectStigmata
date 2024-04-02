@@ -49,3 +49,10 @@
 /processorParam:TextureFormat=Color
 /build:STGlogo.jpg
 
+#begin t4cbeaulieux.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:t4cbeaulieux.spritefont
+

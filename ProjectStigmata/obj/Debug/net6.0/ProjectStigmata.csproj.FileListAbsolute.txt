@@ -28,3 +28,4 @@ C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Co
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Pkey.xnb
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\obj\Debug\net6.0\ProjectStigmata.sourcelink.json
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\t4cbeaulieux.xnb
+C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\TristanMenu.xnb

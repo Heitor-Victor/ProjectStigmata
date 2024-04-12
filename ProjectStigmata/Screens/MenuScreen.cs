@@ -18,12 +18,13 @@ namespace ProjectStigmata.Screens
         public void LoadContent(ContentManager content)
         {
             _font = content.Load<SpriteFont>("t4cbeaulieux");
-            
+
             _options = new List<string>()
             {
                 "New game",
                 "Options",
-                "Credits"
+                "Credits",
+                "Exit"
             };
             _menuGif = content.Load<Texture2D>("TristanMenu");
         }
@@ -43,18 +44,28 @@ namespace ProjectStigmata.Screens
             {
                 _selectedOption = Math.Min(_options.Count - 1, _selectedOption + 1);
             }
-            //implementar seleção
+            // Implementar seleção
             if (Keyboard.GetState().IsKeyDown(Keys.Enter))
             {
                 string selectedOption = _options[_selectedOption];
-                Console.WriteLine("opção selecionada: " + selectedOption);
+                if (selectedOption == "Exit")
+                {
+                    // Chama o Environment.Exit para sair do jogo - byVictor                   
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Opção selecionada: " + selectedOption);
+                    // Aqui você pode adicionar o código para lidar com outras opções do menu
+                    // Por exemplo, iniciar um novo jogo, abrir opções, etc.
+                }
             }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(_menuGif, Vector2.Zero, Color.White);
-            
+
             for (int i = 0; i < _options.Count; i++)
             {
                 Color color = (_selectedOption == i) ? Color.Blue : Color.Black;

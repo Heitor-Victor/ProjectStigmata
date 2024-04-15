@@ -3,6 +3,7 @@ namespace ProjectStigmata
 {
     public enum EScreen
     {
-        Menu
+        Menu,
+        Credits
     }
 }

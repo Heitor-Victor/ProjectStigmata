@@ -60,3 +60,6 @@ C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\obj\Debug\net6.0\ProjectStigmata.pdb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\obj\Debug\net6.0\ProjectStigmata.genruntimeconfig.cache
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\obj\Debug\net6.0\ref\ProjectStigmata.dll
+C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\tristanAnimation.xnb
+C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.ogg
+C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.xnb

@@ -13,7 +13,7 @@ namespace ProjectStigmata.Screens
         private SpriteFont _font;
         private List<string> _options;
         private int _selectedOption = 0;
-        private Texture2D _menuGif;
+        private Texture2D _tristanMenu;
 
         public void LoadContent(ContentManager content)
         {
@@ -26,7 +26,7 @@ namespace ProjectStigmata.Screens
                 "Credits",
                 "Exit"
             };
-            _menuGif = content.Load<Texture2D>("TristanMenu");
+            _tristanMenu = content.Load<Texture2D>("TristanMenu");
         }
 
         public void Initialize()
@@ -53,6 +53,10 @@ namespace ProjectStigmata.Screens
                     // Chama o Environment.Exit para sair do jogo - byVictor                   
                     Environment.Exit(0);
                 }
+                if (selectedOption == "Credits")
+                {
+                    Globals.GameInstance.ChangeScreen(EScreen.Credits);
+                }
                 else
                 {
                     Console.WriteLine("Opção selecionada: " + selectedOption);
@@ -64,7 +68,7 @@ namespace ProjectStigmata.Screens
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(_menuGif, Vector2.Zero, Color.White);
+            spriteBatch.Draw(_tristanMenu, Vector2.Zero, Color.White);
 
             for (int i = 0; i < _options.Count; i++)
             {

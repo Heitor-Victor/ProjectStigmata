@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using ProjectStigmata.Engine;
 using ProjectStigmata.Screens;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ namespace ProjectStigmata
         private IScreen _firstScreen;
         private IScreen _menuScreen;
         private IScreen _currentScreen;
+        private IScreen _creditScreen;
+        private Song _menuSong;
 
 
         public Game1()
@@ -30,6 +33,9 @@ namespace ProjectStigmata
                 case EScreen.Menu:
                     _currentScreen = _menuScreen;
                     break;
+                case EScreen.Credits:
+                    _currentScreen = _creditScreen;
+                    break;
             }
 
             _currentScreen.Initialize();
@@ -40,18 +46,24 @@ namespace ProjectStigmata
             base.Initialize();
             Globals.GameInstance = this;
             _currentScreen.Initialize();
-    }
+            MediaPlayer.Play(_menuSong);
+        }
 
         protected override void LoadContent()
         {
             //800x480
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            _menuSong = Content.Load<Song>("menuMusic");
+
             _firstScreen = new FirstScreen(_graphics);
             _firstScreen.LoadContent(Content);
 
             _menuScreen = new MenuScreen();
             _menuScreen.LoadContent(Content);
+
+            _creditScreen = new CreditScreen();
+            _creditScreen.LoadContent(Content);
 
             _currentScreen = _firstScreen;
 
@@ -60,8 +72,8 @@ namespace ProjectStigmata
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                //Exit();
 
             _currentScreen.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 

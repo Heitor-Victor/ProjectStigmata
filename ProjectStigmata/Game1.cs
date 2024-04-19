@@ -15,7 +15,7 @@ namespace ProjectStigmata
         private IScreen _firstScreen;
         private IScreen _menuScreen;
         private IScreen _currentScreen;
-        private IScreen _creditScreen;
+        private IScreen _gameScreen;
         private Song _menuSong;
 
 
@@ -33,8 +33,8 @@ namespace ProjectStigmata
                 case EScreen.Menu:
                     _currentScreen = _menuScreen;
                     break;
-                case EScreen.Credits:
-                    _currentScreen = _creditScreen;
+                case EScreen.Game:
+                    _currentScreen = _gameScreen;
                     break;
             }
 
@@ -62,8 +62,8 @@ namespace ProjectStigmata
             _menuScreen = new MenuScreen();
             _menuScreen.LoadContent(Content);
 
-            _creditScreen = new CreditScreen();
-            _creditScreen.LoadContent(Content);
+            _gameScreen = new GameScreen();
+            _gameScreen.LoadContent(Content);
 
             _currentScreen = _firstScreen;
 
@@ -76,6 +76,11 @@ namespace ProjectStigmata
                 //Exit();
 
             _currentScreen.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+
+            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing)
+            {
+                MediaPlayer.Stop();
+            }
 
             Input.Update();
 

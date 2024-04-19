@@ -4,6 +4,6 @@ namespace ProjectStigmata
     public enum EScreen
     {
         Menu,
-        Credits
+        Game
     }
 }

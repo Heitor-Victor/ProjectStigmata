@@ -66,3 +66,9 @@ C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.xnb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\tristanAnimation.xnb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run01.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run02.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run03.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run04.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run05.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run06.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\TristanIdle.xnb

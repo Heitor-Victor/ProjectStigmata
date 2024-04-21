@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\",
+  "WorkspaceRootPath": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\heitor\\source\\repos\\projectstigmata\\projectstigmata\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\heitor\\source\\repos\\projectstigmata\\projectstigmata\\screens\\menuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\screens\\menuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\screens\\menuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\heitor\\source\\repos\\projectstigmata\\projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\heitor\\source\\repos\\projectstigmata\\projectstigmata\\screens\\firstscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\screens\\firstscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FirstScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\FirstScreen.cs",
-              "RelativeDocumentMoniker": "ProjectStigmata\\Screens\\FirstScreen.cs",
-              "ToolTip": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\FirstScreen.cs",
-              "RelativeToolTip": "ProjectStigmata\\Screens\\FirstScreen.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Player.cs",
+              "RelativeDocumentMoniker": "ProjectStigmata\\Player.cs",
+              "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Player.cs",
+              "RelativeToolTip": "ProjectStigmata\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T22:34:51.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game1.cs",
-              "DocumentMoniker": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Game1.cs",
-              "RelativeDocumentMoniker": "ProjectStigmata\\Game1.cs",
-              "ToolTip": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Game1.cs",
-              "RelativeToolTip": "ProjectStigmata\\Game1.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwFIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T19:47:49.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
-              "RelativeDocumentMoniker": "ProjectStigmata\\Screens\\GameScreen.cs",
-              "ToolTip": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
-              "RelativeToolTip": "ProjectStigmata\\Screens\\GameScreen.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T22:24:57.008Z",
+              "WhenOpened": "2024-04-20T23:47:41.733Z",
               "EditorCaption": ""
             },
             {
@@ -74,12 +48,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Engine\\GameObject.cs",
+              "RelativeDocumentMoniker": "ProjectStigmata\\Engine\\GameObject.cs",
+              "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Engine\\GameObject.cs",
+              "RelativeToolTip": "ProjectStigmata\\Engine\\GameObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T22:25:51.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameScreen.cs",
+              "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
+              "RelativeDocumentMoniker": "ProjectStigmata\\Screens\\GameScreen.cs",
+              "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
+              "RelativeToolTip": "ProjectStigmata\\Screens\\GameScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T22:24:57.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MenuScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\MenuScreen.cs",
+              "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\MenuScreen.cs",
               "RelativeDocumentMoniker": "ProjectStigmata\\Screens\\MenuScreen.cs",
-              "ToolTip": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\Screens\\MenuScreen.cs",
+              "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\MenuScreen.cs",
               "RelativeToolTip": "ProjectStigmata\\Screens\\MenuScreen.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAqwGcAAAAxAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAmwEcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T20:21:10.206Z",
               "EditorCaption": ""

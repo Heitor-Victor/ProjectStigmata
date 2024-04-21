@@ -3,18 +3,22 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using ProjectStigmata.Engine;
-using System;
-using System.Collections.Generic;
 
 namespace ProjectStigmata.Screens
 {
-    internal class GameScreen : IScreen
+    public class GameScreen : IScreen
     {
-        private SpriteFont _font;
+        private GameObject _floor;
+        private Player _player;
 
-        public void LoadContent(ContentManager content)
+        public void LoadContent(ContentManager Content)
         {
-            _font = content.Load<SpriteFont>("t4cbeaulieux");
+            Texture2D floorImage = Content.Load<Texture2D>("floorSprite");
+            _floor = new GameObject(floorImage);
+
+            Texture2D playerTexture = Content.Load<Texture2D>("Run01");
+            _player = new Player(playerTexture); // Criação da instância de Player
+            _player.Initialize(); // Inicialize o jogador
         }
 
         public void Initialize()
@@ -24,12 +28,17 @@ namespace ProjectStigmata.Screens
 
         public void Update(float deltaTime)
         {
-
+            // Atualize o jogador
+            _player.Update(deltaTime);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(_font,"Jogo aqui",Vector2.Zero,Color.Blue);
+            // Desenhe o chão
+            _floor.Draw(spriteBatch);
+
+            // Desenhe o jogador
+            _player.Draw(spriteBatch);
         }
     }
 }

@@ -32,7 +32,6 @@ C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Pkey.xnb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\STGlogo.xnb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\t4cbeaulieux.xnb
-C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\TristanMenu.xnb
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\ProjectStigmata.exe
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\ProjectStigmata.deps.json
 C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\ProjectStigmata.runtimeconfig.json
@@ -62,3 +61,8 @@ C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\tristanAnimation.xnb
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.ogg
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\FloorSprite.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.ogg
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\menuMusic.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\tristanAnimation.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\Run01.xnb

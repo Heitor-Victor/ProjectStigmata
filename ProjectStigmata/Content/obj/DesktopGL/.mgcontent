@@ -4,6 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/Atk1.png</File>
+    <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/Atk2.png</File>
+    <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/Atk3.png</File>
     <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/floorSprite.png</File>
     <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/menuMusic.mp3</File>
     <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/NGlogo.png</File>
@@ -20,6 +23,9 @@
     <File>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/TristanIdle.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -17,6 +17,7 @@ namespace ProjectStigmata
         private IScreen _currentScreen;
         private IScreen _gameScreen;
         private Song _menuSong;
+        private Song _combatSong;
 
 
         public Main()
@@ -55,6 +56,7 @@ namespace ProjectStigmata
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             _menuSong = Content.Load<Song>("menuMusic");
+            _combatSong = Content.Load<Song>("combatMusic");
 
             _firstScreen = new FirstScreen(_graphics);
             _firstScreen.LoadContent(Content);
@@ -77,9 +79,11 @@ namespace ProjectStigmata
 
             _currentScreen.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
-            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing)
+            //mudança de música
+            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing && MediaPlayer.Queue.ActiveSong == _menuSong)
             {
                 MediaPlayer.Stop();
+                MediaPlayer.Play(_combatSong);
             }
 
             Input.Update();

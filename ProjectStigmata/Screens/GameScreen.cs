@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using ProjectStigmata.Engine;
 using System.Collections.Generic;
 
@@ -14,9 +15,13 @@ namespace ProjectStigmata.Screens
         private List<Texture2D> _playerAnimationFrames;
         private List<Texture2D> _attackFrames;
         private Enemy _enemy;
+        private Texture2D _background;
 
         public void LoadContent(ContentManager Content)
         {
+            //Background
+            _background = Content.Load<Texture2D>("gameBackground");
+            
             // Carregar textura do chão
             Texture2D floorTexture = Content.Load<Texture2D>("floorSprite");
             _floor = new GameObject(floorTexture);
@@ -58,7 +63,7 @@ namespace ProjectStigmata.Screens
 
         public void Initialize()
         {
-
+            
         }
 
         public void Update(float deltaTime)
@@ -72,6 +77,8 @@ namespace ProjectStigmata.Screens
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            // Desenhe o background
+            spriteBatch.Draw(_background, Vector2.Zero, Color.White);
             // Desenhe o chão
             _floor.Draw(spriteBatch);
 

@@ -93,3 +93,6 @@ C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Co
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\combatMusic.ogg
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\combatMusic.xnb
 C:\Users\Heitor\source\repos\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\gameBackground.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\combatMusic.ogg
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\combatMusic.xnb
+C:\Users\VictorOliveira\Documents\Mono_Projects\ProjectStigmata\ProjectStigmata\bin\Debug\net6.0\Content\gameBackground.xnb

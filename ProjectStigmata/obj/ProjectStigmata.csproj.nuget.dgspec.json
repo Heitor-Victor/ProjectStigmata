@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj": {}
+    "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj": {
+    "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj",
+        "projectUniqueName": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj",
         "projectName": "ProjectStigmata",
-        "projectPath": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj",
-        "packagesPath": "C:\\Users\\Heitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heitor\\source\\repos\\ProjectStigmata\\ProjectStigmata\\obj\\",
+        "projectPath": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\ProjectStigmata.csproj",
+        "packagesPath": "C:\\Users\\VictorOliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Heitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\VictorOliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,19 +68,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.29, 6.0.29]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.29, 6.0.29]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.29, 6.0.29]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[6.0.29, 6.0.29]"
             }
           ],
           "frameworkReferences": {
@@ -92,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

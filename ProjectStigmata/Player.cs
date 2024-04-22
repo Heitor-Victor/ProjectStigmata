@@ -8,52 +8,55 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class Player : GameObject
 {
-    private const float SPEED_X = 200;
-    private const float GRAVITY = 10;
-    private Rectangle _previousBounds;
-    private SpriteEffects _orientation;
+    private const float SPEED_X = 200; // Velocidade horizontal do jogador
+    private const float GRAVITY = 10; // Gravidade aplicada ao jogador
+    private Rectangle _previousBounds; // Retângulo representando as dimensões anteriores do jogador
+    private SpriteEffects _orientation; // Orientação do jogador (esquerda ou direita)
     public new Vector2 Position => new Vector2(_bounds.X, _bounds.Y); // Propriedade para acessar a posição do jogador
 
-    // Variáveis Corrida
-    private List<Texture2D> _animationFrames;
-    private int _currentFrameIndex;
-    private float _frameTime;
-    private const float FRAME_DURATION = 0.1f;
+    // Variáveis para animação de corrida
+    private List<Texture2D> _animationFrames; // Lista de texturas para a animação de corrida
+    private int _currentFrameIndex; // Índice do frame atual da animação de corrida
+    private float _frameTime; // Tempo decorrido desde o último frame
+    private const float FRAME_DURATION = 0.1f; // Duração de cada frame de animação
 
-    //Variáveis Ataque
-    private bool _isAttacking;
-    private List<Texture2D> _attackFrames;
-    private const float ATTACK_FRAME_DURATION = 0.1f;
-    private float _attackFrameTime;
-    private int _currentAttackFrameIndex;
-    private bool _wasAttackButtonPressed = false;
+    // Variáveis para animação de ataque
+    private bool _isAttacking; // Flag indicando se o jogador está atacando
+    private List<Texture2D> _attackFrames; // Lista de texturas para a animação de ataque
+    private const float ATTACK_FRAME_DURATION = 0.1f; // Duração de cada frame de animação de ataque
+    private float _attackFrameTime; // Tempo decorrido desde o último frame de ataque
+    private int _currentAttackFrameIndex; // Índice do frame atual da animação de ataque
+    private bool _wasAttackButtonPressed = false; // Flag indicando se o botão de ataque foi pressionado recentemente
 
+    // Construtor da classe Player
     public Player(Texture2D image) : base(image)
     {
-        _animationFrames = new List<Texture2D>();
-        _currentFrameIndex = 0;
-        _frameTime = 0f;
+        _animationFrames = new List<Texture2D>(); // Inicializa a lista de texturas de animação de corrida
+        _currentFrameIndex = 0; // Inicializa o índice do frame atual da animação de corrida
+        _frameTime = 0f; // Inicializa o tempo decorrido desde o último frame
 
-        _isAttacking = false;
-        _attackFrames = new List<Texture2D>();
-        _attackFrameTime = 0f;
-        _currentAttackFrameIndex = 0;
+        _isAttacking = false; // Inicializa a flag de ataque como falsa
+        _attackFrames = new List<Texture2D>(); // Inicializa a lista de texturas de animação de ataque
+        _attackFrameTime = 0f; // Inicializa o tempo decorrido desde o último frame de ataque
+        _currentAttackFrameIndex = 0; // Inicializa o índice do frame atual da animação de ataque
     }
 
+    // Método de inicialização do jogador
     public override void Initialize()
     {
-        _bounds.X = 400;
-        _bounds.Y = 260;
-        _orientation = SpriteEffects.None;
+        _bounds.X = 400; // Define a posição inicial horizontal do jogador
+        _bounds.Y = 260; // Define a posição inicial vertical do jogador
+        _orientation = SpriteEffects.None; // Define a orientação inicial do jogador
     }
 
+    // Método de atualização do jogador
     public override void Update(float deltaTime)
     {
-        base.Update(deltaTime);
+        base.Update(deltaTime); // Chama o método de atualização da classe base (GameObject)
 
-        _previousBounds = _bounds;
+        _previousBounds = _bounds; // Armazena as dimensões anteriores do jogador
 
-        // Verificar movimento e atualizar a animação
+        // Verifica o movimento horizontal do jogador e atualiza a animação
         float direction = 0;
         if (Input.getKey(Keys.A) || Input.getKey(Keys.Left))
         {
@@ -66,20 +69,20 @@ public class Player : GameObject
             _orientation = SpriteEffects.None;
         }
 
-        // Verificar se o jogador está atacando
+        // Verifica se o jogador está tentando atacar
         if (Input.getKey(Keys.X) && !_isAttacking && !_wasAttackButtonPressed)
         {
-            _wasAttackButtonPressed = true; // Marca o botão como pressionado
-            _isAttacking = true;
-            _currentAttackFrameIndex = 0;
-            _attackFrameTime = 0f;
+            _wasAttackButtonPressed = true; // Marca o botão de ataque como pressionado
+            _isAttacking = true; // Inicia a animação de ataque
+            _currentAttackFrameIndex = 0; // Reinicia o índice do frame de ataque
+            _attackFrameTime = 0f; // Reinicia o tempo decorrido desde o último frame de ataque
         }
-        else if (!Input.getKey(Keys.X)) // Se o botão X foi liberado
+        else if (!Input.getKey(Keys.X)) // Se o botão de ataque foi liberado
         {
-            _wasAttackButtonPressed = false; // Marca o botão como liberado
+            _wasAttackButtonPressed = false; // Marca o botão de ataque como liberado
         }
 
-        // Atualizar a posição do jogador
+        // Atualiza a posição horizontal do jogador e a animação de corrida
         if (direction != 0)
         {
             _bounds.X += (int)(direction * SPEED_X * deltaTime);
@@ -87,11 +90,11 @@ public class Player : GameObject
         }
         else
         {
-            // Se não estiver se movendo, exibir o frame de TristanIdle
+            // Se o jogador não estiver se movendo, exibe o frame de repouso
             _currentFrameIndex = 0;
         }
 
-        // Atualizar o ataque
+        // Atualiza a animação de ataque
         if (_isAttacking)
         {
             _attackFrameTime += deltaTime;
@@ -101,76 +104,75 @@ public class Player : GameObject
                 _attackFrameTime = 0f;
                 _currentAttackFrameIndex++;
 
-                // Verificar se chegamos ao último frame de ataque
+                // Verifica se chegamos ao último frame de ataque
                 if (_currentAttackFrameIndex >= _attackFrames.Count)
                 {
                     _currentAttackFrameIndex = 0;
-                    _isAttacking = false;
+                    _isAttacking = false; // Finaliza a animação de ataque
                 }
             }
         }
 
-        // Verificar colisão com o chão 
+        // Verifica e ajusta a colisão com o chão 
         if (_bounds.Y >= 260) // Altura do chão
         {
-            _bounds.Y = 260;
+            _bounds.Y = 260; // Mantém o jogador sobre o chão
         }
     }
 
-    // Método para atualizar a animação com base no tempo
+    // Método para atualizar a animação de corrida com base no tempo
     private void Animate(float deltaTime)
     {
         _frameTime += deltaTime;
 
-        // Defina o índice inicial para o primeiro frame de corrida
+        // Determina os índices inicial e final da animação de corrida
         int startIndex = 1;
-        // Defina o índice final para o último frame de corrida
         int endIndex = 6;
 
-        // Determine o número total de frames de corrida
+        // Calcula o número total de frames de corrida
         int totalFrames = endIndex - startIndex + 1;
 
-        // Calcule o tempo total necessário para percorrer todos os frames de corrida uma vez
+        // Calcula o tempo total necessário para percorrer todos os frames de corrida uma vez
         float totalAnimationTime = totalFrames * FRAME_DURATION;
 
-        // Aplique o loop na animação de corrida
+        // Aplica o loop na animação de corrida
         if (_frameTime >= totalAnimationTime)
         {
-            // Recomece a animação da corrida
+            // Reinicia a animação de corrida
             _frameTime = 0f;
         }
 
-        // Determine o índice do frame com base no tempo atual
+        // Determina o índice do frame com base no tempo atual
         _currentFrameIndex = startIndex + (int)(_frameTime / FRAME_DURATION) % totalFrames;
     }
 
-    // Método para carregar as texturas da animação
+    // Método para carregar as texturas da animação de corrida
     public void LoadAnimationFrames(List<Texture2D> frames)
     {
         _animationFrames.AddRange(frames);
     }
 
-    // Método para carregar as texturas do ataque
+    // Método para carregar as texturas da animação de ataque
     public void LoadAttackFrames(List<Texture2D> frames)
     {
         _attackFrames.AddRange(frames);
     }
 
+    // Método para desenhar o jogador na tela
     public override void Draw(SpriteBatch spriteBatch)
     {
-        // spriteBatch.Draw(_animationFrames[_currentFrameIndex], _bounds, null, Color.White, 0, Vector2.Zero, _orientation, 0);
-
-        // Desenhar o ataque se o jogador estiver atacando
+        // Desenha a animação de ataque se o jogador estiver atacando
         if (_isAttacking)
         {
             spriteBatch.Draw(_attackFrames[_currentAttackFrameIndex], _bounds, null, Color.White, 0, Vector2.Zero, _orientation, 0);
         }
-        else // Se não estiver atacando, desenhe o sprite de corrida ou repouso
+        else // Se não estiver atacando, desenha a animação de corrida ou repouso
         {
             spriteBatch.Draw(_animationFrames[_currentFrameIndex], _bounds, null, Color.White, 0, Vector2.Zero, _orientation, 0);
         }
     }
 
+    // Método para verificar e resolver colisões com outros objetos do jogo
     public void CheckBlockers(GameObject[] gameObjects)
     {
         foreach (GameObject item in gameObjects)

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\engine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\screens\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|c:\\users\\victoroliveira\\documents\\mono_projects\\projectstigmata\\projectstigmata\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F11230-D65B-453C-A877-97B85DAA8039}|ProjectStigmata\\ProjectStigmata.csproj|solutionrelative:projectstigmata\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Enemy.cs",
+              "RelativeDocumentMoniker": "ProjectStigmata\\Enemy.cs",
+              "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Enemy.cs",
+              "RelativeToolTip": "ProjectStigmata\\Enemy.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:48:13.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Player.cs",
               "RelativeDocumentMoniker": "ProjectStigmata\\Player.cs",
               "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Player.cs",
               "RelativeToolTip": "ProjectStigmata\\Player.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAQwKkAAAAJAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAuwJsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T23:47:41.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GameObject.cs",
               "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Engine\\GameObject.cs",
               "RelativeDocumentMoniker": "ProjectStigmata\\Engine\\GameObject.cs",
               "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Engine\\GameObject.cs",
               "RelativeToolTip": "ProjectStigmata\\Engine\\GameObject.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAwC0AAAAJAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAQwE8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T22:25:51.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GameScreen.cs",
               "DocumentMoniker": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
               "RelativeDocumentMoniker": "ProjectStigmata\\Screens\\GameScreen.cs",
               "ToolTip": "C:\\Users\\VictorOliveira\\Documents\\Mono_Projects\\ProjectStigmata\\ProjectStigmata\\Screens\\GameScreen.cs",
               "RelativeToolTip": "ProjectStigmata\\Screens\\GameScreen.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAANAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwDAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T22:24:57.008Z",
               "EditorCaption": ""

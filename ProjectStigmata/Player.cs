@@ -12,6 +12,7 @@ public class Player : GameObject
     private const float GRAVITY = 10;
     private Rectangle _previousBounds;
     private SpriteEffects _orientation;
+    public new Vector2 Position => new Vector2(_bounds.X, _bounds.Y); // Propriedade para acessar a posição do jogador
 
     // Variáveis Corrida
     private List<Texture2D> _animationFrames;
@@ -41,7 +42,7 @@ public class Player : GameObject
 
     public override void Initialize()
     {
-        _bounds.X = 150;
+        _bounds.X = 400;
         _bounds.Y = 260;
         _orientation = SpriteEffects.None;
     }

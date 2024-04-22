@@ -13,6 +13,7 @@ namespace ProjectStigmata.Screens
         private Player _player;
         private List<Texture2D> _playerAnimationFrames;
         private List<Texture2D> _attackFrames;
+        private Enemy _enemy;
 
         public void LoadContent(ContentManager Content)
         {
@@ -48,6 +49,11 @@ namespace ProjectStigmata.Screens
             _player.LoadAnimationFrames(_playerAnimationFrames);
             _player.LoadAttackFrames(_attackFrames); // Passar as texturas de ataque para o jogador
             _player.Initialize();
+
+            // Carregar textura do inimigo
+            Texture2D enemyTexture = Content.Load<Texture2D>("MobSpriteLeft");
+            _enemy = new Enemy(enemyTexture, _player); // Passa a instância do jogador para o inimigo
+            _enemy.Initialize();
         }
 
         public void Initialize()
@@ -59,6 +65,9 @@ namespace ProjectStigmata.Screens
         {
             // Atualize o jogador
             _player.Update(deltaTime);
+
+            // Atualize o inimigo
+            _enemy.Update(deltaTime);
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -68,6 +77,9 @@ namespace ProjectStigmata.Screens
 
             // Desenhe o jogador
             _player.Draw(spriteBatch);
+
+            // Desenhe o inimigo
+            _enemy.Draw(spriteBatch);
         }
     }
 }

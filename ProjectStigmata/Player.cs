@@ -178,7 +178,7 @@ public class Player : GameObject
     public bool CheckCollision(Enemy enemy)
     {
         // Verifica se há interseção entre os retângulos delimitadores do jogador e do inimigo
-        if (_bounds.Intersects(enemy.Bounds))
+        if (_bounds.Intersects(enemy.Bounds) && _isAttacking == true)
         {
             // Se houver interseção, retorna true (houve colisão)
             return true;

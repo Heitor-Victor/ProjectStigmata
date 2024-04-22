@@ -7,6 +7,7 @@
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/Atk1.png</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/Atk2.png</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/Atk3.png</File>
+    <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/Coin.png</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/combatMusic.mp3</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/floorSprite.png</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/gameBackground.png</File>
@@ -27,6 +28,7 @@
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/TristanIdle.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

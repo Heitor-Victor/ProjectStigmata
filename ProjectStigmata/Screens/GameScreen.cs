@@ -10,16 +10,22 @@ namespace ProjectStigmata.Screens
 {
     public class GameScreen : IScreen
     {
+        private SpriteFont _font;
         private GameObject _floor; // Objeto representando o chão do jogo
         private Player _player; // Objeto representando o jogador
         private List<Texture2D> _playerAnimationFrames; // Lista de texturas para a animação do jogador
         private List<Texture2D> _attackFrames; // Lista de texturas para a animação de ataque
         private Enemy _enemy; // Objeto representando o inimigo
         private Texture2D _background; // Textura para o fundo do jogo
+        private ScoreCounter _scorer;
+
 
         // Função para carregar os recursos necessários para o jogo
         public void LoadContent(ContentManager Content)
         {
+            // Carregar fonte
+            _font = Content.Load<SpriteFont>("t4cbeaulieux");
+            _scorer = new ScoreCounter(_font);
             // Carregar a textura do fundo
             _background = Content.Load<Texture2D>("gameBackground");
 
@@ -70,6 +76,7 @@ namespace ProjectStigmata.Screens
         // Função de atualização que é chamada a cada quadro do jogo
         public void Update(float deltaTime)
         {
+
             // Atualizar o jogador
             _player.Update(deltaTime);
 
@@ -81,6 +88,7 @@ namespace ProjectStigmata.Screens
             {
                 // Se houve colisão enquanto o jogador estava atacando, remova o inimigo
                 _enemy.Remove();
+                _scorer.Increase();
             }
         }
 
@@ -89,6 +97,9 @@ namespace ProjectStigmata.Screens
         {
             // Desenhar o background
             spriteBatch.Draw(_background, Vector2.Zero, Color.White);
+
+            _scorer.Draw(spriteBatch);
+
             // Desenhar o chão
             _floor.Draw(spriteBatch);
 

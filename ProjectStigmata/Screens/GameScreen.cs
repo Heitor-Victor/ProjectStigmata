@@ -76,11 +76,10 @@ namespace ProjectStigmata.Screens
             // Atualizar o inimigo
             _enemy.Update(deltaTime);
 
-            // Verifique a colisão entre o jogador e o inimigo
-            if (_player.CheckCollision(_enemy))
+            // Verificar se o jogador está atacando e se houve colisão com o inimigo
+            if (_player.IsAttacking && _player.CheckCollision(_enemy))
             {
-                // Se houve colisão, faça algo (por exemplo, diminuir a vida do jogador)
-                // Neste exemplo, vamos apenas remover o inimigo
+                // Se houve colisão enquanto o jogador estava atacando, remova o inimigo
                 _enemy.Remove();
             }
         }

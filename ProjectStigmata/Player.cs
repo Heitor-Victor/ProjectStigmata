@@ -27,6 +27,7 @@ public class Player : GameObject
     private float _attackFrameTime; // Tempo decorrido desde o último frame de ataque
     private int _currentAttackFrameIndex; // Índice do frame atual da animação de ataque
     private bool _wasAttackButtonPressed = false; // Flag indicando se o botão de ataque foi pressionado recentemente
+    public bool IsAttacking { get; private set; } // Propriedade para verificar se o jogador está atacando
 
     // Construtor da classe Player
     public Player(Texture2D image) : base(image)
@@ -47,6 +48,7 @@ public class Player : GameObject
         _bounds.X = 400; // Define a posição inicial horizontal do jogador
         _bounds.Y = 260; // Define a posição inicial vertical do jogador
         _orientation = SpriteEffects.None; // Define a orientação inicial do jogador
+        IsAttacking = false; // Inicializa a flag de ataque como falsa
     }
 
     // Método de atualização do jogador
@@ -69,10 +71,11 @@ public class Player : GameObject
             _orientation = SpriteEffects.None;
         }
 
-        // Verifica se o jogador está tentando atacar
+        // Verificar se o jogador está tentando atacar
         if (Input.getKey(Keys.X) && !_isAttacking && !_wasAttackButtonPressed)
         {
             _wasAttackButtonPressed = true; // Marca o botão de ataque como pressionado
+            IsAttacking = true; // Indica que o jogador está atacando
             _isAttacking = true; // Inicia a animação de ataque
             _currentAttackFrameIndex = 0; // Reinicia o índice do frame de ataque
             _attackFrameTime = 0f; // Reinicia o tempo decorrido desde o último frame de ataque

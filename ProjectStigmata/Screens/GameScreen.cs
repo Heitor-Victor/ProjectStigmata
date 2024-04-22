@@ -10,8 +10,6 @@ namespace ProjectStigmata.Screens
 {
     public class GameScreen : IScreen
     {
-        private SpriteFont _font; // Fonte para o contador
-        private ScoreCounter _scoreCounter; // Contador de pontos
         private GameObject _floor; // Objeto representando o chão do jogo
         private Player _player; // Objeto representando o jogador
         private List<Texture2D> _playerAnimationFrames; // Lista de texturas para a animação do jogador
@@ -22,10 +20,6 @@ namespace ProjectStigmata.Screens
         // Função para carregar os recursos necessários para o jogo
         public void LoadContent(ContentManager Content)
         {
-            //Instância do contador
-            _font = Content.Load<SpriteFont>("t4cbeaulieux");
-            _scoreCounter = new ScoreCounter(_font);
-
             // Carregar a textura do fundo
             _background = Content.Load<Texture2D>("gameBackground");
 
@@ -82,12 +76,13 @@ namespace ProjectStigmata.Screens
             // Atualizar o inimigo
             _enemy.Update(deltaTime);
 
-            // Chamado para incrementar o score(no momento tá pra incrementar ao clicar no x, modificar)
-            if (Input.getKeyDown(Keys.X))
+            // Verifique a colisão entre o jogador e o inimigo
+            if (_player.CheckCollision(_enemy))
             {
-                _scoreCounter.Increase();
+                // Se houve colisão, faça algo (por exemplo, diminuir a vida do jogador)
+                // Neste exemplo, vamos apenas remover o inimigo
+                _enemy.Remove();
             }
-
         }
 
         // Função de desenho que é chamada a cada quadro do jogo
@@ -95,10 +90,6 @@ namespace ProjectStigmata.Screens
         {
             // Desenhar o background
             spriteBatch.Draw(_background, Vector2.Zero, Color.White);
-
-            // Desenhe o contador
-            _scoreCounter.Draw(spriteBatch);
-
             // Desenhar o chão
             _floor.Draw(spriteBatch);
 

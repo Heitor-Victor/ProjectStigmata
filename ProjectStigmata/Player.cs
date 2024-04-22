@@ -172,6 +172,19 @@ public class Player : GameObject
         }
     }
 
+    public bool CheckCollision(Enemy enemy)
+    {
+        // Verifica se há interseção entre os retângulos delimitadores do jogador e do inimigo
+        if (_bounds.Intersects(enemy.Bounds))
+        {
+            // Se houver interseção, retorna true (houve colisão)
+            return true;
+        }
+
+        // Se não houver interseção, retorna false (não houve colisão)
+        return false;
+    }
+
     // Método para verificar e resolver colisões com outros objetos do jogo
     public void CheckBlockers(GameObject[] gameObjects)
     {

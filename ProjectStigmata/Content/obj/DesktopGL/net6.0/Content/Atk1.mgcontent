@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/Atk1.png</SourceFile>
-  <SourceTime>2024-04-22T00:43:31.6837114-03:00</SourceTime>
-  <DestFile>C:/Users/VictorOliveira/Documents/Mono_Projects/ProjectStigmata/ProjectStigmata/Content/bin/DesktopGL/Content/Atk1.xnb</DestFile>
-  <DestTime>2024-04-22T11:19:51.6760146-03:00</DestTime>
+  <SourceFile>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/Atk1.png</SourceFile>
+  <SourceTime>2024-04-22T02:33:36.155746-03:00</SourceTime>
+  <DestFile>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/bin/DesktopGL/Content/Atk1.xnb</DestFile>
+  <DestTime>2024-04-22T12:50:50.1686724-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

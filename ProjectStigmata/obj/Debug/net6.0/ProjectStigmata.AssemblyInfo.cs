@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectStigmata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b94250cc6d7046bb85c92d277b0cdd047e53ae85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce0111c1bb00df56787cfd68aecdd3f56de51c62")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectStigmata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectStigmata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

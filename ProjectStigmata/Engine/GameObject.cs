@@ -5,7 +5,7 @@ namespace ProjectStigmata.Engine
 {
     public class GameObject
     {
-        protected Rectangle _bounds; // Retângulo delimitador do objeto
+        public Rectangle _bounds; // Retângulo delimitador do objeto
         protected Texture2D _image; // Textura do objeto
 
         // Propriedade para acessar o retângulo delimitador do objeto

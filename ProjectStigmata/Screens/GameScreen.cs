@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using ProjectStigmata.Engine;
+using System;
 using System.Collections.Generic;
 
 namespace ProjectStigmata.Screens
@@ -89,6 +90,12 @@ namespace ProjectStigmata.Screens
                 // Se houve colisão enquanto o jogador estava atacando, remova o inimigo
                 _enemy.Remove();
                 _scorer.Increase();
+            }
+
+            // Verificar se o jogador colidiu com o monstro sem atacar
+            if (_player._bounds.Intersects(_enemy.Bounds) && _player.IsAttacking == false)
+            {
+                Globals.GameInstance.ChangeScreen(EScreen.GameOver);
             }
         }
 

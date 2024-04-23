@@ -26,8 +26,10 @@
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/t4cbeaulieux.spritefont</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/tristanAnimation.png</File>
     <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/TristanIdle.png</File>
+    <File>C:/Users/Heitor/source/repos/ProjectStigmata/ProjectStigmata/Content/You_Died.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

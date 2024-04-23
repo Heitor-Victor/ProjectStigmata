@@ -16,6 +16,7 @@ namespace ProjectStigmata
         private IScreen _menuScreen;
         private IScreen _currentScreen;
         private IScreen _gameScreen;
+        private IScreen _gameOverScreen;
         private Song _menuSong;
         private Song _combatSong;
 
@@ -37,6 +38,9 @@ namespace ProjectStigmata
                 case EScreen.Game:
                     _currentScreen = _gameScreen;
                     break;
+                case EScreen.GameOver:
+                    _currentScreen = _gameOverScreen;
+                    break;
             }
 
             _currentScreen.Initialize();
@@ -47,7 +51,7 @@ namespace ProjectStigmata
             base.Initialize();
             Globals.GameInstance = this;
             _currentScreen.Initialize();
-            MediaPlayer.Play(_menuSong);
+            //MediaPlayer.Play(_menuSong);
         }
 
         protected override void LoadContent()
@@ -67,6 +71,9 @@ namespace ProjectStigmata
             _gameScreen = new GameScreen();
             _gameScreen.LoadContent(Content);
 
+            _gameOverScreen = new GameOverScreen();
+            _gameOverScreen.LoadContent(Content);
+
             _currentScreen = _firstScreen;
 
             // TODO: use this.Content to load your game content here
@@ -80,11 +87,11 @@ namespace ProjectStigmata
             _currentScreen.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             //mudança de música
-            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing && MediaPlayer.Queue.ActiveSong == _menuSong)
+/*            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing && MediaPlayer.Queue.ActiveSong == _menuSong)
             {
                 MediaPlayer.Stop();
                 MediaPlayer.Play(_combatSong);
-            }
+            }*/
 
             Input.Update();
 

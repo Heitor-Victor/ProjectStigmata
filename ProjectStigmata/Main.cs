@@ -51,7 +51,7 @@ namespace ProjectStigmata
             base.Initialize();
             Globals.GameInstance = this;
             _currentScreen.Initialize();
-            //MediaPlayer.Play(_menuSong);
+            MediaPlayer.Play(_menuSong);
         }
 
         protected override void LoadContent()
@@ -87,11 +87,11 @@ namespace ProjectStigmata
             _currentScreen.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             //mudança de música
-/*            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing && MediaPlayer.Queue.ActiveSong == _menuSong)
+            if (_currentScreen == _gameScreen && MediaPlayer.State == MediaState.Playing && MediaPlayer.Queue.ActiveSong == _menuSong)
             {
                 MediaPlayer.Stop();
                 MediaPlayer.Play(_combatSong);
-            }*/
+            }
 
             Input.Update();
 
